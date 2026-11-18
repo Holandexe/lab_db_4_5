@@ -1,0 +1,14 @@
+# Конфігурація Back-End проєкту tickets_ua
+# Значення можна перевизначити змінними оточення: DB_HOST, DB_PORT, DB_USER, DB_PASSWORD, DB_NAME
+server:
+  host: 127.0.0.1
+  port: 5000
+  debug: true
+
+database:
+  host: 127.0.0.1
+  port: 3306
+  user: root
+  password: your_password
+  name: tickets_ua
+  charset: utf8mb4

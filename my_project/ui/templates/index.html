@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <title>tickets.ua — Back-End API</title>
+  <style>
+    body{font-family:Arial,sans-serif;max-width:900px;margin:30px auto;padding:0 16px;color:#222}
+    h1{font-size:22px} table{border-collapse:collapse;width:100%}
+    td,th{border:1px solid #ccc;padding:5px 9px;font-size:14px;text-align:left} th{background:#eef2fa}
+    code{background:#f3f3f3;padding:1px 4px}
+  </style>
+</head>
+<body>
+  <h1>tickets.ua — Back-End API (Flask + MySQL)</h1>
+  <p>Усього маршрутів: <b>{{ rules|length }}</b>. Тестування — через Postman (колекція у файлі <code>postman_collection.json</code>).</p>
+  <table>
+    <tr><th>URL</th><th>Методи</th></tr>
+    {% for rule, methods in rules %}<tr><td><code>{{ rule }}</code></td><td>{{ methods }}</td></tr>{% endfor %}
+  </table>
+</body>
+</html>
